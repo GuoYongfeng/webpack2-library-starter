@@ -1,14 +1,26 @@
 {
   "name": "webpack2-library-starter",
-  "version": "0.2.1",
-  "description": "Produce universal library with webpack and es6",
+  "version": "1.0.0",
+  "description": "Produce universal library with webpack2 and es6",
   "main": "lib/library.js",
   "scripts": {
-    "build": "webpack --mode=build",
-    "dev": "webpack --progress --colors --watch --mode=dev",
+    "build": "webpack --env.build",
+    "dev": "webpack --progress --colors --watch --env.dev",
     "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
     "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
   },
+  "repository": "git@github.com:GuoYongfeng/webpack2-library-starter.git",
+  "keywords": [
+    "webpack",
+    "es6",
+    "starter",
+    "library",
+    "universal",
+    "umd",
+    "commonjs"
+  ],
+  "author": "guoyff <guoyff@yonyou.com>",
+  "license": "MIT",
   "devDependencies": {
     "babel": "6.5.2",
     "babel-core": "6.22.1",
@@ -20,26 +32,7 @@
     "eslint": "1.7.2",
     "eslint-loader": "1.6.1",
     "mocha": "2.3.4",
-    "webpack": "2.2.1",
-    "yargs": "6.6.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/krasimir/webpack-library-starter.git"
-  },
-  "keywords": [
-    "webpack",
-    "es6",
-    "starter",
-    "library",
-    "universal",
-    "umd",
-    "commonjs"
-  ],
-  "author": "Krasimir Tsonev",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/krasimir/webpack-library-starter/issues"
-  },
-  "homepage": "https://github.com/krasimir/webpack-library-starter"
+    "webpack": "^2.2.1",
+    "yargs": "^6.6.0"
+  }
 }
